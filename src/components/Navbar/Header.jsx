@@ -1,6 +1,6 @@
 import React from 'react';
 import {MenuItems} from './MenuItems';
-import './Header.css'
+import './Header.css';
 
 class Navbar extends React.Component {
     render() {
