@@ -6,7 +6,7 @@ class Navbar extends React.Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">ecommerce<i className='google fonts'></i></h1>
+                <h1 className="navbar-logo">APEX APPAREL<i className='google fonts'></i></h1>
                 <div className="menu-icon">
 
                 </div>

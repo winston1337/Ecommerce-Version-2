@@ -1,0 +1,24 @@
+.FooterItems {
+    background: rgb(55, 187, 187);
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    margin-bottom: -250%;
+    overflow: hidden;
+}
+.FooterItems ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    gap: 1rem;
+    display: inline-block;
+    border-radius: fill;
+    margin-top: 10px;
+}
+.FooterItems ul li a{
+    text-decoration: none;
+    font-size: 15px;
+}

@@ -1,36 +1,33 @@
 .NavbarItems {
     background: rgb(55, 187, 187);
-    height: 150px;
+    height: 120px;
     text-align: center;
     margin-bottom: 10%;
 }
-
+.navbar-logo {
+    color: white;
+    font-size: 40px;
+}
 .NavbarItems ul {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 1rem;
     display: inline-block;
+    border-radius: fill;
+    margin-top: 10px;
 }
 
 .NavbarItems ul li {
     margin: 0 4rem;
 }
 .NavbarItems ul li a{
-    color: white;
+    color: rgb(228, 225, 225);
     text-decoration: none;
     font-size: 30px;
-  }
-  .NavbarItems ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #f1ad1b;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-  }
-  .NavbarItems ul li:hover::after{
-    width: 100%;
-    
-    }
+}
+.NavbarItems ul li a:hover{
+    color: white;
+    transition: 200ms ease-in;
+    text-shadow: 0px 0px 5px white;
+}

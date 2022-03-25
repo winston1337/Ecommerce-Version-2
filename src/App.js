@@ -1,17 +1,19 @@
 import './App.css';
 import Product from './components/Product';
 import Header from './components/Navbar/Header'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <div><Header/></div>
+      <div><Footer/></div>
       <div className="cards">
      <Product 
       src="/products/beach-shirt1.jpg" 
       name="beach shirt" 
-      desc="product desc" 
-      price="$300"/>
+      desc="beautiful design reminiscent of the nature in the amazon rainforest" 
+      price="$500"/>
      <Product
       src="/products/black-dress-shirt.jpg" 
       name="black dress shirt" 
