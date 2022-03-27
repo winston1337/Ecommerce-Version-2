@@ -8,82 +8,90 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Home/>} />
-    //     <Route path="/products" element={<Product/>} />
-    //     <Route path="/contact" element={<Contact/>} />
-    //   </Routes>
-    // </Router>
-
-
-    
-    <div className="App">
-      <Header/>
-      <FooterContainer/>
+    <Router>
+      <div className="App">
+      <Header/> <FooterContainer/>
       <div className="cards">
-     <Product 
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/products" element={<><Product 
       src="/products/beach-shirt1.jpg" 
       name="beach shirt" 
       desc="this design encapsulates the beauty of the coral reefs" 
       price="$500"/>
-     <Product
+      
+      <Product
       src="/products/black-dress-shirt.jpg" 
       name="black dress shirt" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/black-jacket1.jpg" 
       name="black jacket" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/blue-blazer1.jpg" 
       name="blue blazer" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/bomber-jacket1.jpg" 
       name="bomber jacket" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/chain-blouson1.jpg" 
       name="chain blouson" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/gold-shirt1.jpg" 
       name="gold shirt" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/gray-tshirt1.jpeg" 
       name="gray t shirt" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/renaissance-jacket1.jpg" 
       name="renaissance jacket" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/stripe-shirt1.jpg" 
       name="stripe shirt" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/white-button1.jpg" 
       name="white button-up shirt" 
       desc="product desc" 
       price="$300"/>
-     <Product 
+      
+      <Product 
       src="/products/white-tshirt1.jpeg" 
       name="white t shirt" 
       desc="product desc" 
       price="$300"/>
-    </div>
-    </div>
+      </>} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
+      </div>
+      </div>
+    </Router>
+
   );
 }
 

@@ -31,3 +31,24 @@
     transition: 200ms ease-in;
     text-shadow: 0px 0px 5px white;
 }
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+
+.fa-bars {
+    color: #fff;
+}
+.fa-xmark {
+    color: #fff;
+}
+.menu-icon {
+    display: none;
+}
