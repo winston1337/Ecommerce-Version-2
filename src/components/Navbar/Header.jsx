@@ -3,12 +3,18 @@ import {MenuItems} from './MenuItems';
 import './Header.css';
 
 class Navbar extends React.Component {
+    state = {clicked : false}
+
+    handleClick = () => {
+        this.setState({clicked: !this.state.clicked})
+    }
+
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">APEX APPAREL<i className='google fonts'></i></h1>
-                <div className="menu-icon">
-
+                <h1 className="navbar-logo">ROYAL APPAREL<i className=''></i></h1>
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
                 </div>
                 <ul>
                     {MenuItems.map((item, index) => {

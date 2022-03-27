@@ -6,7 +6,7 @@
 
 .App {
   text-align: center;
-  background-image: url("../public/marble.png");
+  background-image: linear-gradient(rgba(69, 72, 80, 0.7),rgba(60, 62, 70, 0.7)), url("../public/marble.png");
   background-attachment: fixed;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
@@ -15,14 +15,18 @@
 
 
 .cards {
-  column-width: 280px;
-  width: 700px;
+  display: flex;
+  /* flex-direction: column; */
+  /* column-width: 280px; */
+  /* width: 33%; */
   column-gap: 140px;
   margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .card-body:hover{
   box-shadow: 0 8px 12px 0 rgb(243, 163, 15);
+  transform: scale(1.02);
   /* background-image: url("/products/blue-blazer1.jpg"); */
 }
 .card-image{
@@ -49,6 +53,6 @@
 }
 .card-btn:hover{
   background: rgb(187, 23, 209);
-  color: white;
+  color: #fff;
   transition: 200ms ease-in;
 }

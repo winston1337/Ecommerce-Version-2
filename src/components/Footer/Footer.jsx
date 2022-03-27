@@ -1,26 +1,28 @@
 import React from 'react';
-import {FooterItems} from './FooterItems';
-import './Footer.css';
+import {Wrapper, Row, Column, Link, Title, Container} from './createStyles'
 
-class Footer extends React.Component {
-    render() {
-        return(
-            <nav className="FooterItems">
-                <ul>
-                    {FooterItems.map((item, index) => {
-                        return (
-                            <ul>
-                            <li key={index}><a className='item.cName' href={item.url}>
-                                {item.title}
-                                </a>
-                            </li>
-                            </ul>
-                        )
-                    })}
-                </ul>
-            </nav>
-        )
-    }
+
+export default function Footer({children, ...restProps}) {
+    return <Container{...restProps}>{children}</Container>
 }
 
-export default Footer;
+Footer.Wrapper = function FooterWrapper({children, ...restProps}) {
+    return <Wrapper{...restProps}>{children}</Wrapper>
+}
+
+Footer.Row = function FooterRow({children, ...restProps}) {
+    return <Row{...restProps}>{children}</Row>
+}
+
+Footer.Column = function FooterColumn({children, ...restProps}) {
+    return <Column{...restProps}>{children}</Column>
+}
+
+Footer.Link = function FooterWrapper({children, ...restProps}) {
+    return <Link{...restProps}>{children}</Link>
+}
+
+Footer.Title = function FooterTitle({children, ...restProps}) {
+    return <Title{...restProps}>{children}</Title>
+}
+
