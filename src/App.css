@@ -150,7 +150,7 @@ color: #666;
   cursor: pointer;
   user-select: none;
 }
-.right-arrow {
+.left-arrow {
   position: absolute;
   top: 50%;
   left: 32px;

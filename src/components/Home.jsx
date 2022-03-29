@@ -25,7 +25,7 @@ if(!Array.isArray(slides) || slides.length <= 0){
   </div>
     <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
-      <FaArrowAltCircleLeft className="right-arrow" onClick={nextSlide}/>
+      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
     {sliderData.map((slide, index) => {
       return (
         <div className={index === current ? 'slide active' : 'slide'} key={index}>
