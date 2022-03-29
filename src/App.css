@@ -17,9 +17,6 @@
 
 .cards {
   display: flex;
-  /* flex-direction: column; */
-  /* column-width: 280px; */
-  /* width: 33%; */
   column-gap: 140px;
   margin: 0 auto;
   justify-content: center;
@@ -28,7 +25,6 @@
 .card-body:hover{
   box-shadow: 0 8px 12px 0 rgb(243, 163, 15);
   transform: scale(1.02);
-  /* background-image: url("/products/blue-blazer1.jpg"); */
 }
 .card-image{
   background-color: rgb(171, 245, 245);
