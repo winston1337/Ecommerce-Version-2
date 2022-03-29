@@ -1,8 +1,15 @@
-function Product({name, desc, price, src}) {
+import {useState} from 'react';
+
+function Product({name, desc, price, src, hoversrc}) {
+    const [hover, setHover] = useState(false);
     return (
-        <div className="card">
+        <div className="card" onMouseOver={()=> {
+            setHover(true);
+        }} onMouseOut={() =>{
+            setHover(false);
+        }}>
             <div className="card-body">
-                <img className="card-image" src={src}/>
+                <img className="card-image" src={hover ? hoversrc : src} alt="shirt"/>
                 <h2>{name}</h2>
                 <p><i>{desc}</i></p>
                 <h3>{price}</h3>

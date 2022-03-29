@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
     padding: 60px 60px;
     background: radial-gradient(circle, rgb(227, 3, 235) 0%, rgb(15, 14, 15) 100%);
-    position: bottom;
     width: 100%;
     bottom: 0px;
 `
@@ -15,6 +14,7 @@ export const Wrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
 `
+
 export const Row = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));

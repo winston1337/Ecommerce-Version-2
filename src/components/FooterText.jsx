@@ -29,10 +29,10 @@ export function FooterContainer() {
                 </Footer.Column>
                 <Footer.Column>
                     <Footer.Title>Social</Footer.Title>
-                    <Footer.Link href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-facebook"></i> Facebook</Footer.Link>
-                    <Footer.Link href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i> Instagram</Footer.Link>
-                    <Footer.Link href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-youtube"></i> YouTube</Footer.Link>
-                    <Footer.Link href="https://twitter.com/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-twitter"></i> Twitter</Footer.Link>
+                    <Footer.Link href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-facebook"></i> Facebook</Footer.Link>
+                    <Footer.Link href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-instagram"></i> Instagram</Footer.Link>
+                    <Footer.Link href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-youtube"></i> YouTube</Footer.Link>
+                    <Footer.Link href="https://twitter.com/" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-twitter"></i> Twitter</Footer.Link>
                 </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>

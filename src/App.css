@@ -10,6 +10,7 @@
   background-attachment: fixed;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
 }
 
 /* product cards */
@@ -65,7 +66,7 @@
   padding: 40px;
   background: white;
   border-radius: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .contactForm h2
 {
