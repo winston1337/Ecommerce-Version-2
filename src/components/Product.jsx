@@ -3,8 +3,6 @@ import {useState} from 'react';
 function Product({name, desc, price, src, hoversrc}) {
     const [hover, setHover] = useState(false);
     return (
-        <>
-        {
         <div className="card" onMouseOver={()=> {
             setHover(true);
         }} onMouseOut={() =>{
@@ -19,8 +17,6 @@ function Product({name, desc, price, src, hoversrc}) {
             </div>
             <button className="card-btn">VIEW PRODUCT</button>
         </div>
-    }
-    </>
     )
 }
 
