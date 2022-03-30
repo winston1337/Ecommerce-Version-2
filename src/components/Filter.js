@@ -30,7 +30,7 @@ export default class Products extends React.Component {
 
   handleChange(e) {
     console.log(e.target.value);
-    console.log("holi");
+    console.log("functions");
     let filteredProducts = this.state.productData.filter(
       (product) => 100 > product.price
     );
@@ -67,7 +67,7 @@ export default class Products extends React.Component {
               } else if (Number.isInteger(this.state.type)) {
                 return this.state.type > card.price;
               } else {
-                return this.state.type === card.part_type;
+                return this.state.type === card.product_name;
               }
             })
             .map(({name, desc, price, src, hoversrc, alt}) => {
