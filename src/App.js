@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import { sliderData } from './components/SliderData';
-import Filter from './components/Filter';
 
 function App() {
   return (
@@ -16,9 +15,7 @@ function App() {
       <div className="cards">
       <Routes>
         <Route path="/" element={<Home slides={sliderData}/>} />
-        <Route path="/products" element={<>
-        <Filter/>
-        <Product 
+        <Route path="/products" element={<><Product 
       src="/products/beach-shirt1.jpg" alt="beach-shirt"
       hoversrc="/products/beach-shirt2.jpg" 
       name="Starfish Print Shirt" 
