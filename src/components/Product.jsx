@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function Product({name, desc, price, src, hoversrc, alt}) {
+function Product({name, desc, price, src, hoversrc, }) {
     const [hover, setHover] = useState(false);
     return (
         <div className="card" onMouseOver={()=> {
