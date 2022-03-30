@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function Product({name, desc, price, src, hoversrc}) {
+function Product({name, desc, price, src, hoversrc, alt}) {
     const [hover, setHover] = useState(false);
     return (
         <div className="card" onMouseOver={()=> {
@@ -8,7 +8,6 @@ function Product({name, desc, price, src, hoversrc}) {
         }} onMouseOut={() =>{
             setHover(false);
         }}>
-            
             <div className="card-body">
                 <img className="card-image" src={hover ? hoversrc : src} alt="shirt"/>
                 <h2>{name}</h2>

@@ -20,13 +20,13 @@
 
 .NavbarItems ul li {
     margin: 0 4rem;
-    flex-direction: row;
+}
+.NavbarItems ul li a{
     color: rgb(228, 225, 225);
     text-decoration: none;
     font-size: 30px;
-    /* flex-wrap: wrap; */
 }
-.NavbarItems ul li:hover{
+.NavbarItems ul li a:hover{
     color: white;
     transition: 200ms ease-in;
     text-shadow: 0px 0px 5px white;
@@ -60,8 +60,7 @@
     }
     .nav-menu {
         display: flex;
-        flex-direction: row;
-        width: 100%;
+        flex-direction: column;
         height: 500px;
         position: absolute;
         top: 80px;
