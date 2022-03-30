@@ -16,7 +16,7 @@ function Contact() {
       
       <label>
       <div className="inputBox">
-        <input type="text" name="email" required="required"></input>
+        <input type="email" name="email" required="required"></input>
         <span>Email</span>
       </div>
       </label>

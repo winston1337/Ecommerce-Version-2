@@ -20,13 +20,13 @@
 
 .NavbarItems ul li {
     margin: 0 4rem;
-}
-.NavbarItems ul li a{
+    flex-direction: row;
     color: rgb(228, 225, 225);
     text-decoration: none;
     font-size: 30px;
+    /* flex-wrap: wrap; */
 }
-.NavbarItems ul li a:hover{
+.NavbarItems ul li:hover{
     color: white;
     transition: 200ms ease-in;
     text-shadow: 0px 0px 5px white;
@@ -60,18 +60,19 @@
     }
     .nav-menu {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
         height: 500px;
         position: absolute;
         top: 80px;
         left: -100%;
-        opacity: 1%;
+        opacity: 1;
         transition: all 0.5s ease;
     }
     .nav-menu.active {
-        background: #6668F4;
+        background: radial-gradient(circle, rgb(227, 3, 235) 0%, rgb(15, 14, 15) 100%);
         left: 0;
-        opacity: 1%;
+        opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
     }
