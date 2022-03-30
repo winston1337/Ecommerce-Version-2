@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import { sliderData } from './components/SliderData';
+import Filter from './components/Filter';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
       <div className="cards">
       <Routes>
         <Route path="/" element={<Home slides={sliderData}/>} />
-        <Route path="/products" element={<><Product 
+        <Route path="/products" element={<>
+        <Filter/>
+        <Product 
       src="/products/beach-shirt1.jpg" alt="beach-shirt"
       hoversrc="/products/beach-shirt2.jpg" 
       name="Starfish Print Shirt" 
@@ -27,7 +30,7 @@ function App() {
       hoversrc="/products/black-dress-shirt.jpg" 
       name="Black Dress Shirt" 
       desc="Classy and matches with anything" 
-      price="$650"/>
+      price="$600"/>
       
       <Product 
       src="/products/black-jacket2.jpg"
@@ -41,28 +44,28 @@ function App() {
       hoversrc="/products/blue-blazer2.jpg" 
       name="Blue Blazer" 
       desc="Striking design that will turn heads" 
-      price="$700"/>
+      price="$1200"/>
       
       <Product 
       src="/products/bomber-jacket1.jpg"
       hoversrc="/products/bomber-jacket2.jpg" 
       name="Nappa Leather Bomber Jacket" 
       desc="Made from premium nappa leather, with golden colored silk embroidery" 
-      price="$850"/>
+      price="$1200"/>
       
       <Product 
       src="/products/chain-blouson1.jpg"
       hoversrc="/products/chain-blouson2.jpg" 
       name="Chain Blouson" 
       desc="Unique design with golden colored woven links" 
-      price="$900"/>
+      price="$1000"/>
       
       <Product 
       src="/products/gold-shirt1.jpg"
       hoversrc="/products/gold-shirt2.jpg" 
       name="Silk Gold Print Shirt" 
       desc="This golden lined special design encapsulates opulance" 
-      price="$1200"/>
+      price="$1000"/>
       
       <Product 
       src="/products/gray-tshirt1.jpeg"
