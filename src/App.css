@@ -63,6 +63,8 @@
   background: white;
   border-radius: 15px;
   margin-bottom: 50px;
+  transform: translateX(75%);
+  overflow: hidden;
 }
 .contactForm h2
 {
