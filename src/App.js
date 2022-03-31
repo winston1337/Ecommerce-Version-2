@@ -12,13 +12,14 @@ function App() {
     <Router>
       <div className="App">
       <Header/> 
+      
       <Routes>
         <Route path="/" element={<Home slides={sliderData}/>} />
         <Route path="/products" element={<Products/>}/>
         <Route path="/contact" element={<Contact/>} />
       </Routes>
-      </div>
       <FooterContainer/>
+      </div>
     </Router>
 
   );
