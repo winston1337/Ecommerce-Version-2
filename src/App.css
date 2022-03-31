@@ -187,3 +187,11 @@ color: #666;
   border: none;
   padding: 10px;
 }
+
+@media screen and (max-width: 960px) {
+  .contactForm {
+    width: 320px;
+    transform: translateX(10%);
+    overflow: hidden;
+  }
+}
