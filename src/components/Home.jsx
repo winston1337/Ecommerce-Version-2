@@ -21,7 +21,7 @@ if(!Array.isArray(slides) || slides.length <= 0){
 
   return (
     <><div className='headText'>
-    <h1>The Ultimate Luxury Clothing Brand</h1>
+    <h1>The Ultimate Designer Clothing Brand</h1>
   </div>
     <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
