@@ -58,13 +58,12 @@
 
 .contactForm
 {
-  width: 40%;
+  width: 570px;
   padding: 40px;
   background: white;
   border-radius: 15px;
   margin-bottom: 50px;
-  transform: translateX(75%);
-  overflow: hidden;
+  margin: auto;
 }
 .contactForm h2
 {
@@ -190,8 +189,10 @@ color: #666;
 
 @media screen and (max-width: 960px) {
   .contactForm {
-    width: 320px;
-    transform: translateX(10%);
-    overflow: hidden;
+    width: 340px;
+  }
+  .headText {
+    font-size: 15px;
+    margin-bottom: 15px;
   }
 }
